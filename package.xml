@@ -1,0 +1,10 @@
+<package>
+  <name>Loudmouth</name>
+  <library>libloudmouth-1.so</library>
+
+  <filein>lm-connection.st</filein>
+  <filein>lm-connection-callouts.st</filein>
+
+  <file>lm-connection.st</file>
+  <file>lm-connection-callouts.st</file>
+</package>
