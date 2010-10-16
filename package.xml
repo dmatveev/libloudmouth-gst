@@ -6,9 +6,13 @@
   <filein>lm-connection-callouts.st</filein>
   <filein>lm-message.st</filein>
   <filein>lm-message-callouts.st</filein>
+  <filein>lm-message-handler.st</filein>
+  <filein>lm-message-handler-callouts.st</filein>
 
   <file>lm-connection.st</file>
   <file>lm-connection-callouts.st</file>
   <file>lm-message.st</file>
   <file>lm-message-callouts.st</file>
+  <file>lm-message-handler.st</file>
+  <file>lm-message-handler-callouts.st</file>
 </package>
