@@ -123,22 +123,22 @@ Object subclass: LMConnection [
         ^LMConnection lm: connPtr ssl: anSSLPtr
     ]
 
-    send: aMsgPtr error: anError [
+    send: aMessage error: anError [
         <category: 'sending'>
-        ^LMConnection lm: connPtr send: aMsgPtr error: anError
+        ^LMConnection lm: connPtr send: aMessage msgPtr error: anError
     ]
 
-    sendWithReply: aMsgPtr messageHandler: aHandlerPtr error: anError [
+    sendWithReply: aMessage messageHandler: aHandlerPtr error: anError [
         <category: 'sending'>
         ^LMConnection lm: connPtr
-                      sendWithReply: aMsgPtr
+                      sendWithReply: aMessage msgPtr
                       messageHandler: aHandlerPtr
                       error: anError
     ]
 
-    sendWithReplyAndBlock: aMsgPtr error: anError [
+    sendWithReplyAndBlock: aMessage error: anError [
         <category: 'sending'>
-        ^LMConnection lm: connPtr sendWithReplyAndBlock: aMsgPtr error: anError
+        ^LMConnection lm: connPtr sendWithReplyAndBlock: aMessage msgPtr error: anError
     ]
 
     registerMessageHandler: aHandlerPtr type: aType priority: aPriority [

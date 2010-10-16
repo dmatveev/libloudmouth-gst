@@ -20,6 +20,11 @@ Object subclass: LMMessage [
         msgPtr := aCObject
     ]
 
+    msgPtr [
+        <category: 'private'>
+        ^msgPtr
+    ]
+
     type [
         <category: 'accessors'>
         ^LMMessage lmType: msgPtr
