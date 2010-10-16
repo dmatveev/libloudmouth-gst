@@ -3,14 +3,14 @@ Object subclass: LMConnection [
 
     LMConnection class >> onServer: aServerString [
         <category: 'instance creation'>
-        ^(self basicNew)
+        ^(self new)
             connPtr: (self lmCreateConnectionOn: aServerString); 
             yourself
     ]
 
     LMConnection class >> onServer: aServerString withContext: aContextPtr [
         <category: 'instance creation'>
-        ^(self basicNew)
+        ^(self new)
             connPtr: (self lmCreateConnectionOn: aServerString withContext: aContextPtr); 
             yourself
     ]

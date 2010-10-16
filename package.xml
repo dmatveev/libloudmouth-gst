@@ -4,7 +4,11 @@
 
   <filein>lm-connection.st</filein>
   <filein>lm-connection-callouts.st</filein>
+  <filein>lm-message.st</filein>
+  <filein>lm-message-callouts.st</filein>
 
   <file>lm-connection.st</file>
   <file>lm-connection-callouts.st</file>
+  <file>lm-message.st</file>
+  <file>lm-message-callouts.st</file>
 </package>
