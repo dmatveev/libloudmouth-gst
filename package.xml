@@ -12,6 +12,8 @@
   <filein>lm-message-node-callouts.st</filein>
   <filein>lm-ssl.st</filein>
   <filein>lm-ssl-callouts.st</filein>
+  <filein>lm-proxy.st</filein>
+  <filein>lm-proxy-callouts.st</filein>
 
   <file>lm-connection.st</file>
   <file>lm-connection-callouts.st</file>
@@ -23,4 +25,6 @@
   <file>lm-message-node-callouts.st</file>
   <file>lm-ssl.st</file>
   <file>lm-ssl-callouts.st</file>
+  <file>lm-proxy.st</file>
+  <file>lm-proxy-callouts.st</file>
 </package>

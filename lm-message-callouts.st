@@ -1,10 +1,10 @@
 LMMessage class extend [
-    to: aString type: aMessageType [
+    lmMessageTo: aString type: aMessageType [
         <category: 'ffi callouts'>
         <cCall: 'lm_message_new' returning: #cObject args: #(#string #uInt)>
     ]
 
-    to: aString type: aMessageType subtype: aMessageSubtype [
+    lmMessageTo: aString type: aMessageType subtype: aMessageSubtype [
         <category: 'ffi callouts'>
         <cCall: 'lm_message_new_with_sub_type' returning: #cObject
             args: #(#string #uInt #uInt)>
