@@ -182,3 +182,4 @@ Object subclass: LMConnection [
         ^LMConnection lmUnref: connPtr
     ]
 ]
+

@@ -14,6 +14,7 @@
   <filein>lm-ssl-callouts.st</filein>
   <filein>lm-proxy.st</filein>
   <filein>lm-proxy-callouts.st</filein>
+  <filein>lm-constants.st</filein>
 
   <file>lm-connection.st</file>
   <file>lm-connection-callouts.st</file>
@@ -27,4 +28,5 @@
   <file>lm-ssl-callouts.st</file>
   <file>lm-proxy.st</file>
   <file>lm-proxy-callouts.st</file>
+  <file>lm-constants.st</file>
 </package>
