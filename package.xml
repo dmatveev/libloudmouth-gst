@@ -10,6 +10,8 @@
   <filein>lm-message-handler-callouts.st</filein>
   <filein>lm-message-node.st</filein>
   <filein>lm-message-node-callouts.st</filein>
+  <filein>lm-ssl.st</filein>
+  <filein>lm-ssl-callouts.st</filein>
 
   <file>lm-connection.st</file>
   <file>lm-connection-callouts.st</file>
@@ -19,4 +21,6 @@
   <file>lm-message-handler-callouts.st</file>
   <file>lm-message-node.st</file>
   <file>lm-message-node-callouts.st</file>
+  <file>lm-ssl.st</file>
+  <file>lm-ssl-callouts.st</file>
 </package>
