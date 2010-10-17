@@ -1,12 +1,12 @@
 Object subclass: LMSSL [
     | sslPtr |
 
-    LMSSL class >> expectedFingerprint: aString sslFunction: aCallback data: aData
+    LMSSL class >> expectedFingerprint: aString sslFunction: aBlock data: aData
     detroyNotify: aDestroyNotify [
         <category: 'instance creation'>
         ^(self new)
             sslPtr: (self lmExpectedFingerprint: aString
-                          sslFunction: aCallback
+                          sslFunction: aBlock asSSLFunction
                           data: aData
                           detroyNotify: aDestroyNotify);
             yourself

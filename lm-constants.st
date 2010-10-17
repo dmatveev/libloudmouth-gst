@@ -77,6 +77,19 @@ Eval [
       #error)
         asEnumeration: #LMMessageSubType.
 
+    #(#continue
+      #stop)
+        asEnumeration: #LMSSLResponse.
+
+    #(#noCertFound
+      #untrustedCert
+      #certExpired
+      #certNotActivated
+      #certHostnameMismatch
+      #certFingerprintMismatch
+      #genericError)
+        asEnumeration: #LMSSLStatus.
+
     #(#none
       #http)
         asEnumeration: #LMProxyType

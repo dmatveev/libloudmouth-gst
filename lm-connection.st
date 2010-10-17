@@ -20,10 +20,10 @@ Object subclass: LMConnection [
         connPtr := anExternalConnectionPointer
     ]
 
-    open: aResultFunction userData: aData destroyNotify: aDestroyNotify error: anError [
+    open: aBlock userData: aData destroyNotify: aDestroyNotify error: anError [
         <category: 'opening'>
         ^LMConnection lm: connPtr
-             open: aResultFunction
+             open: aBlock asResultFunction
              userData: aData
              destroyNotify: aDestroyNotify
              error: anError
@@ -40,14 +40,14 @@ Object subclass: LMConnection [
     ]
     
     authenticate: aUserString password: aPwdString resource: aResourceString 
-    resultFunction: aResultFunctionPtr data: aData destroyNotify: aDestroyNotify
+    resultFunction: aBlock data: aData destroyNotify: aDestroyNotify
     error: anError [
         <category: 'authentification'>
         ^LMConnection lm: connPtr
               authenticate: aUserString
               password: aPwdString
               resource: aResourceString 
-              resultFunction: aResultFunctionPtr
+              resultFunction: aBlock asResultFunction
               data: aData
               destroyNotify: aDestroyNotify
               error: anError
@@ -154,10 +154,10 @@ Object subclass: LMConnection [
         ^LMConnection lm: connPtr unregisterMessageHandler: aHandlerPtr type: aType
     ]
 
-    setDisconnectFunction: aDisconnectFunction data: aData destroyNotify: aDestroyNotify [
+    setDisconnectFunction: aBlock data: aData destroyNotify: aDestroyNotify [
         <category: 'interface'>
         ^LMConnection lm: connPtr
-              setDisconnectFunction: aDisconnectFunction
+              setDisconnectFunction: aBlock asDisconnectFunction
               data: aData
               destroyNotify: aDestroyNotify
     ]

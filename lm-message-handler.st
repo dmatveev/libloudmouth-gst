@@ -1,11 +1,11 @@
 Object subclass: LMMessageHandler [
     | hdrPtr |
 
-    LMMessageHandler class >> function: aHandlerFunction data: aData
+    LMMessageHandler class >> function: aBlock data: aData
     destroyNotify: aDestroyNotify [
         <category: 'instance creation'>
         ^(self new)
-            hdrPtr: (self lmHandler: aHandlerFunction
+            hdrPtr: (self lmHandler: aBlock asHandleMessageFunction
                           data: aData
                           destroyNotify: aDestroyNotify);
             yourself
